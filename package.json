@@ -1,0 +1,38 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "created by pawandai",
+  "main": "server.js",
+  "author": "pawandai",
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./dist/server",
+    "build": "tsc -p .",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@graphql-tools/merge": "^9.0.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "connect-mongodb-session": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "graphql": "^16.9.0",
+    "graphql-passport": "^0.6.8",
+    "mongoose": "^8.4.3",
+    "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/connect-mongodb-session": "^2.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/node": "^20.14.7",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.5.2"
+  }
+}
