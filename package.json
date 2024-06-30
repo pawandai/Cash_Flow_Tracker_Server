@@ -6,8 +6,8 @@
   "author": "pawandai",
   "license": "ISC",
   "scripts": {
-    "start": "node ./dist/src/server.js",
-    "build": "tsc -p .",
+    "start": "NODE_ENV=production node ./dist/server.js",
+    "build": "NODE_ENV=production tsc -p .",
     "dev": "tsc-watch --onSuccess \"npm start\""
   },
   "dependencies": {
