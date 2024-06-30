@@ -1,6 +1,6 @@
 import "dotenv/config";
-import { GraphQL } from "./src";
-import { connectToDB } from "./src/database";
+import { GraphQL } from ".";
+import { connectToDB } from "./database";
 
 const port = process.env.PORT || 7000;
 
